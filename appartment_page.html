@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/209b0f50b4.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="appartment_page.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--* Navbar -->
     <nav>
-
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <img class="logo" src="assets/logo-pink.png" alt="logo Airbnb">
+            </div>
+            <div id="search-area" class="search-area">
+                <button class="bg-light d-flex justify-content-evenly align-items-center">
+                    <span class="mx-1">Ovunque | Qualche settimana |</span>
+                    <span class="mx-1">Aggiungi ospiti</span>
+                    <span class="mx-1"><i class="align-middle fas fa-search"></i></span>
+                </button>
+            </div>
+            <div class="right-part d-flex justify-content-between align-items-center">
+                <span class="mx-2">Affitta con Airbnb</span>
+                <span class="mx-2"><i class="fas fa-globe"></i></span>
+                <div class="btn-group mx-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Registrati</button></li>
+                        <li><button class="dropdown-item" type="button">Accedi</button></li>
+                        <hr>
+                        <li><button class="dropdown-item" type="button">Gift Card</button></li>
+                        <li><button class="dropdown-item" type="button">Affitta con Airbnb</button></li>
+                        <li><button class="dropdown-item" type="button">Centro Assistenza</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="search-bar" class="search d-flex justify-content-center d-none">
+            <div class="d-flex flex-column">
+                <label for="Dove">Dove</label>
+                <input class="px-3" id="Dove" type="text" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Check-in">Check-in</label>
+                <input class="px-3" id="Check-in" type="date" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Check-out">Check-out</label>
+                <input class="px-3" id="Check-out" type="date" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Chi">Chi</label>
+                <input class="px-3" id="Chi" type="number" placeholder="Chi vuole andare...">
+            </div>
+            <div class="mt-4">
+                <button class="bg-light d-flex flex-column justify-content-center height-100">
+                        <span class="mx-1"><i class="align-middle fas fa-search"></i></span>
+                </button>
+            </div>
+        </div>
+        <hr>
     </nav>
+
     <!--* Photo section -->
     <section>
 
     </section>
     <!--* Info section -->
-    <section>
-        
+    <section class="row ">
+        <div class="col-md-6 offset-md-1 bg-secondary">
+
+        </div>
+        <div class="col-md-3 offset-md-1 bg-primary">
+
+        </div>
     </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<script src="appartment_page.js"></script>
 </html>
