@@ -7,6 +7,10 @@
     <script src="https://kit.fontawesome.com/209b0f50b4.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="appartment_page.css">
     <title>Document</title>
 </head>
@@ -14,8 +18,64 @@
 <body>
     <!--* Navbar -->
     <nav>
-
+        <div class="d-flex justify-content-between align-items-center px-5 mx-5">
+            <div>
+                <img class="logo" src="assets/logo-pink.png" alt="logo Airbnb">
+            </div>
+            <div id="search-area" class="search-area">
+                <button class="bg-light rounded-5 btn-border py-2 px-3 rounded-4 d-flex justify-content-evenly align-items-center">
+                    <span class="mx-1">Ovunque | Qualche settimana |</span>
+                    <span class="mx-1">Aggiungi ospiti</span>
+                    <span class="mx-1 d-flex align-items-center justify-content-center ms-3"><i class="align-middle fas fa-search"></i></span>
+                </button>
+            </div>
+            <div class="right-part d-flex justify-content-between align-items-center">
+                <a class="txt-black text-decoration-none" href=""><span class="mx-2">Affitta con Airbnb</span></a>
+                <a class="txt-black text-decoration-none" href=""><span class="mx-2"><i class="fas fa-globe"></i></span></a>
+                <div class="btn-group mx-2">
+                    <button type="button" class="rounded py-1 btn-border btn dropdown-toggle bg-light" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="txt-black fas fa-bars"></i>
+                        <i class="txt-black fas fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Registrati</button></li>
+                        <li><button class="dropdown-item" type="button">Accedi</button></li>
+                        <hr>
+                        <li><button class="dropdown-item" type="button">Gift Card</button></li>
+                        <li><button class="dropdown-item" type="button">Affitta con Airbnb</button></li>
+                        <li><button class="dropdown-item" type="button">Centro Assistenza</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- hidden search bar -->
+        <div id="search-bar" class="search d-flex justify-content-center d-none">
+            <div class="d-flex flex-column">
+                <label for="Dove">Dove</label>
+                <input class="btn-border px-3" id="Dove" type="text" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Check-in">Check-in</label>
+                <input class="btn-border px-3" id="Check-in" type="date" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Check-out">Check-out</label>
+                <input class="btn-border px-3" id="Check-out" type="date" placeholder="Dove vuoi andare...">
+            </div>
+            <div class="d-flex flex-column">
+                <label for="Chi">Chi</label>
+                <input class="btn-border px-3" id="Chi" type="number" placeholder="Chi vuole andare...">
+            </div>
+            <div class="mt-4">
+                <button class="btn-bg-color btn-border bg-light d-flex flex-column justify-content-center height-100">
+                    <span class="mx-1"><i class="fw-bold fs-5 p-2 fas fa-search"></i></span>
+                </button>
+            </div>
+        </div>
+        <hr>
     </nav>
+
     <!--* Photo section -->
     <section>
         <div class="container-fluid mt-5">
@@ -33,6 +93,7 @@
         </div>
     </section>
     <!--* Info section -->
+<<<<<<< HEAD
     <section>
 
     </section>
@@ -125,5 +186,301 @@
     </section>
 
 </body>
+=======
+    <section class="row ">
+        <div class="info-sec col-md-6 offset-md-1">
+            <h2>Firenze, Italia. Intero alloggio: casa</h2>
+            <p>2 ospiti · 1 camera da letto · 3 letti · 1 bagno</p>
+            <i class="fas fa-star"></i> &#160; <span>4.89 &#160; · &#160; 707 recensioni</span>
+            <hr>
+            <div class="d-flex align-items-center my-4">
+                <img class="profil-pic me-3" src="/assets/propic.png" alt="...">
+                <div>
+                    <p class="mb-0 fw-bold">Nome dell'host: Elena</p>
+                    <p class="mb-0"><span class="fw-bold"> Superhost</span> · 10 anni di esperienza come host.</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="d-flex align-items-center my-4">
+                    <i class="fs-2 me-3 fas fa-medal"></i>
+                    <div>
+                        <p class="mb-0 fw-bold">Elena è un Superhost.</p>
+                        <p class="mb-0">I Superhost sono host con esperienza e valutazioni molto alte.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center my-4">
+                    <i class="fs-2 me-3 fas fa-key"></i>
+                    <div>
+                        <p class="mb-0 fw-bold">Ottima esperienza di check-in</p>
+                        <p class="mb-0">Il 90% degli ospiti ha valutato con 5 stelle la procedura di check-in.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center my-4">
+                    <i class="fs-2 me-3 fas fa-swimming-pool"></i>
+                    <div>
+                        <p class="mb-0 fw-bold">Tuffati</p>
+                        <p class="mb-0">Questo è uno dei pochi alloggi in zona dotati di piscina.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <span>Alcune informazioni sono state tradotte automaticamente.
+                        <a class="fw-bold text-decoration-none txt-black" href="">Mostra il testo nella lingua
+                            originale</a></span>
+                </div>
+                <br>
+                <div>
+                    casaBARTHEL è un luogo perfetto per una vacanza e una residenza d'artista, immerso nel paesaggio
+                    toscano a soli venti minuti dal Duomo e ad un'ora da Siena. Vieni a vivere con noi: goditi i
+                    nostri ulivi, l'orto, il campo da tennis e la piccola piscina.
+                    <br>
+                    <a class="fw-bold text-decoration-none txt-black" href="">Mostra altro</a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h4>Dove dormirai</h4>
+                <div class="d-flex justify-content-between">
+                    <div class="card border-0" style="width: 18rem;">
+                        <img src="/assets/3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Terazza</h5>
+                            <p class="card-text">Dove puoi godere il tuo caffeé!</p>
+                        </div>
+                    </div>
+                    <div class="card border-0" style="width: 18rem;">
+                        <img src="/assets/4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Vista panoramica</h5>
+                            <p class="card-text">5 min a piedi da lago </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div>
+                <h4 class="my-4">Cosa troverai</h4>
+                <div class="row">
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-utensils"></i>
+                        <span>Cucina</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-car"></i>
+                        <span>Parcheggio gratuito nella proprietà</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-tv"></i>
+                        <span>TV</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-thermometer-full"></i>
+                        <span>Riscaldamento</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-snowflake"></i>
+                        <span>Aria condizionata</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-wifi"></i>
+                        <span>Wi-fi</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-swimmer"></i>
+                        <span>Piscina</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-charging-station"></i>
+                        <span>Postazione di ricarica per veicoli elettrici</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Colazione</span>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <i class="fas fa-pump-soap"></i>
+                        <span>Shampoo</span>
+                    </div>
+                </div>
+                <button type="button" class="bg-light p-3 rounded mt-4 fw-bold px-5" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Mostra tutti e 42 i servizi
+                </button>
+                <!-- Scrollable modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Cosa troverai</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-dialog modal-dialog-scrollable p-3">
+                                <p class="fw-bold">Viste panoramiche</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Cucina</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Bagno</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Asciugacapelli</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Asciugacapelli</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-broom"></i>
+                                    <span>Prodotti per la pulizia</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-pump-soap"></i>
+                                    <span>Shampoo</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-soap"></i>
+                                    <span>Sapone</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-shower"></i>
+                                    <span>Acqua calda</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Intrattenimento</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-tv"></i>
+                                    <span>HDTV da 32 pollici con Amazon Prime Video, Disney+, Fire TV, Netflix</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Riscaldamento e climatizzazione</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-thermometer-full"></i>
+                                    <span>Riscaldamento</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-snowflake"></i>
+                                    <span>Aria condizionata</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Internet e ufficio</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>Wifi veloce: 1003 Mbps</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-desktop"></i>
+                                    <span>Spazio di lavoro dedicato</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Cucina e zona pranzo</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Cucina</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <span>Colazione</span>
+                                </div>
+                                <hr>
+
+                                <p class="fw-bold">Other services</p>
+                                <div class="mt-4">
+                                    <i class="fas fa-car"></i>
+                                    <span>Parcheggio gratuito nella proprietà</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-swimmer"></i>
+                                    <span>Piscina</span>
+                                </div>
+                                <div class="mt-4">
+                                    <i class="fas fa-charging-station"></i>
+                                    <span>Postazione di ricarica per veicoli elettrici</span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btn-bg-color border-0"
+                                    data-bs-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--* prenotation-card -->
+        <div class="prenotation-card col-md-3 offset-md-1 p-1 shadow p-3 rounded mb-auto">
+            <div class="container-fluid bg-light">
+                <h4 class="mb-3">218 $/notte</h4>
+                <div class="d-flex ">
+                    <div class="d-flex flex-fill flex-column">
+                        <button class="flex-fill" disabled>Check-in</button>
+                        <input class="px-3 w-100" id="Check-in" type="text" placeholder="gg/mm/aaaa"
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    <div class="d-flex flex-fill flex-column">
+                        <button class="flex-fill" disabled>Check-out</button>
+                        <input class="px-3 w-100" id="Check-out" type="text" placeholder="gg/mm/aaaa"
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex flex-fill flex-row">
+                        <button class="flex-fill" disabled>Ospiti</button>
+                        <input class="px-3 w-100" id="Check-out" type="text" placeholder="1 Ospite">
+                    </div>
+                </div>
+                <div class="my-2">
+                    <button class="rounded-3 w-100 bg-pink border-0 py-2">Prenota</button>
+                </div>
+                <p class="mb-4">Non riceverai alcun addebito in questa fase</p>
+                <div class="my-2 d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">260 $ x 5 notti</a>
+                    <span>1.300 $</span>
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">Offerta speciale</a>
+                    <span>-208 $</span>
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">Costi di pulizia</a>
+                    <span>80 $</span>
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">Costi del servizio Airbnb</a>
+                    <span>202 $</span>
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">Tasse</a>
+                    <span>28 $</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <a class="txt-black text-decoration-none" href="">Totale</a>
+                    <span>1.402 $</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<script src="appartment_page.js"></script>
+>>>>>>> fadc62bec802a8b07b384e176db95d00b324481c
 
 </html>
