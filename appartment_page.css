@@ -104,3 +104,10 @@ nav>div:last-of-type>div:last-of-type {
 .bg-light {
     background-color: white !important;
 }
+
+/** PRENOTATION BLOCK */
+
+.prenotation-card{
+    position: sticky;
+    top: 10px;
+}
