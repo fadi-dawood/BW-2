@@ -3,12 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="appartment_page.css">
     <link rel="stylesheet" href="search_style.css">
     <title>AirBnB mockup - Search page</title>
 </head>
 <body>
     
+    <nav class="container-fluid px-3 mb-2 border d-flex justify-content-center">
+        <div class="nav-container d-flex justify-content-between align-items-center">
+            <div>
+                <img class="logo navbar-brand" src="assets/logo-pink.png" alt="logo Airbnb" width="100px">
+            </div>
+            <div class="right-part d-flex justify-content-between align-items-center">
+                <span class="mx-2">Affitta con Airbnb</span>
+                <span class="mx-2"><i class="fas fa-globe"></i></span>
+                <div class="btn-group mx-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bars text-dark"></i>
+                        <i class="fas fa-user text-dark"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Registrati</button></li>
+                        <li><button class="dropdown-item" type="button">Accedi</button></li>
+                        <hr>
+                        <li><button class="dropdown-item" type="button">Gift Card</button></li>
+                        <li><button class="dropdown-item" type="button">Affitta con Airbnb</button></li>
+                        <li><button class="dropdown-item" type="button">Centro Assistenza</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content container-fluid mt-5">
+        <p id="stays-number">10 stays</p>
+        <h2 class="search-title">Stays in Genova</h2>
+        <div class="filter-btn-container">
+            <span class="filter-btn">Available houses</span>
+            <span class="filter-btn">Booked houses</span>
+            <span class="filter-btn">All houses</span>
+        </div>
+        <p class="info">Enter dates and number of guests to ee the total price per night.</p>
+        <p class="info">Review COVID-19 travel restrictions before you book. <a href="#">Learn more</a></p>
+    
+
+        <div class="card col-3">
+            <div class="card-img">
+                <img src="assets/1.webp" alt="Forest cabin" class="img-fluid">
+            </div>
+            <div class="card-text">
+                <div class="ratings">
+                    <span class="star-rating">
+                        <i class="fa-solid fa-star fs-6"></i> 
+                        <span class="fw-bold">2.75</span> · 4 ratings
+                    </span>
+                    <span class="num-rating"></span>
+                </div>
+                <p class="house-info">Apartment · Genova</p>
+                <p class="house-name">The Windy House</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/209b0f50b4.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
