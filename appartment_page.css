@@ -4,6 +4,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Nunito;
+}
+
+.txt-black {
+    color: black;
+}
+
+.btn-bg-color {
+    background-image: linear-gradient(#fe375b, #e01064);
+}
+
+.btn-border {
+    border: 1px solid #afafaf;
+}
+
+.bg-light {
+    background-color: white !important;
 }
 
 /**Navbar sec */
@@ -12,33 +29,16 @@ nav .logo {
     width: auto;
 }
 
-nav div:first-of-type .search-area button {
-    height: 40px;
-    border-radius: 20px;
-    width: 400px;
-    border: 1px solid #afafaf;
-}
-
 nav div:first-of-type .search-area button span:last-of-type {
-    background-color: #ff385c;
+    background-image: linear-gradient(#fe375b, #e01064);
     color: white;
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
 
-nav .btn.btn-secondary.dropdown-toggle {
-    border: 1px solid #afafaf;
-    height: 40px;
-    border-radius: 15px;
-}
-
-nav .btn.btn-secondary.dropdown-toggle::after {
+nav .btn.dropdown-toggle::after {
     display: none !important;
-}
-
-.btn-group button i {
-    color: black;
 }
 
 
@@ -55,21 +55,18 @@ nav>div:nth-of-type(2) input {
 
 nav>div:nth-of-type(2) div:first-of-type input {
     border-radius: 30px 0 0 30px;
-    border-right: 1px solid #afafaf;
-    border: 1px solid #afafaf;
+    border-right: 0;
 }
 
 nav>div:nth-of-type(2) div:nth-of-type(2) input,
 nav>div:nth-of-type(2) div:nth-of-type(3) input,
 nav>div:nth-of-type(2) div:nth-of-type(4) input {
     border-radius: 0;
-    border-right: 1px solid #afafaf;
-    border: 1px solid #afafaf;
+    border-right: 0;
 }
 
 nav>div:nth-of-type(2) div:last-of-type button {
     border-radius: 0 30px 30px 0;
-    border: 1px solid #afafaf;
 }
 
 nav>div:nth-of-type(2) label {
@@ -79,35 +76,97 @@ nav>div:nth-of-type(2) label {
 }
 
 nav div:last-of-type button span {
-    background-color: #ff385c;
     color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
-nav div:last-of-type button {
-    height: 100%;
-    border-radius: 0 30px 30px 0;
-}
 
 nav>div:last-of-type>div:last-of-type {
     border: none;
     height: 60px;
     background-color: white;
-
 }
 
-.bg-light {
-    background-color: white !important;
+
+/**Info section*/
+.profil-pic {
+    width: 40px;
+}
+
+.info-sec>div:nth-of-type(2) p:nth-of-type(2) {
+    color: #83857e;
 }
 
 /** PRENOTATION BLOCK */
 
-.prenotation-card{
+.prenotation-card {
     position: sticky;
     top: 10px;
+}
+
+.prenotation-card>div.container-fluid div:first-of-type div:first-of-type button {
+    border-radius: 5px 0 0 0;
+    border: 1px #afafaf solid;
+    border-bottom: 0;
+    margin: 0;
+    color: black;
+    background-color: white !important;
+    font-size: 16px;
+}
+
+.prenotation-card>div.container-fluid div:first-of-type div:last-of-type button {
+    border-radius: 0 5px 0 0;
+    border: 1px #afafaf solid;
+    border-bottom: 0;
+    border-left: 0;
+    margin: 0;
+    color: black;
+    background-color: white !important;
+    font-size: 16px;
+}
+
+.prenotation-card>div.container-fluid div:first-of-type div:first-of-type input {
+    border: 1px #afafaf solid;
+    border-top: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.prenotation-card>div.container-fluid div:first-of-type div:last-of-type input {
+    border: 1px #afafaf solid;
+    border-top: 0;
+    margin: 0;
+    font-size: 12px;
+    border-left: 0;
+}
+
+.prenotation-card>div.container-fluid div:nth-of-type(2) button {
+    border-radius: 0 0 0 5px;
+    border: 0;
+    border-bottom: 1px #afafaf solid;
+    border-left: 1px #afafaf solid;
+    margin: 0;
+    color: black;
+    background-color: white !important;
+    font-size: 16px;
+    padding-left: 25px;
+}
+
+.prenotation-card>div.container-fluid div:nth-of-type(2) input {
+    border: 0;
+    border-bottom: 1px #afafaf solid;
+    border-right: 1px #afafaf solid;
+    border-top: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.prenotation-card>div.container-fluid div:nth-of-type(3) button {
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(#fe375b, #e01064);
+}
+
+.prenotation-card>div.container-fluid>p {
+    font-size: 10px;
+    text-align: center;
 }
