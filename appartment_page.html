@@ -70,7 +70,7 @@
                 <label for="Chi">Chi</label>
                 <input class="btn-border px-3" id="Chi" type="number" placeholder="Chi vuole andare...">
             </div>
-            <div class="mt-4">
+            <div class="mt-5">
                 <button class="btn-bg-color btn-border bg-light d-flex flex-column justify-content-center height-100">
                     <span class="mx-1"><i class="fw-bold fs-5 p-2 fas fa-search"></i></span>
                 </button>
@@ -81,19 +81,29 @@
 
     <!--* Photo section -->
     <section>
-        <div class="container-fluid mt-5">
-            <div class="row mb-5">
-                <div class="col-12 col-md-5 offset-md-1 px-0 me-1">
-                    <img src="01.webp" alt="01" class="img-left img-all img-fluid">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-2 col-md-6 p-md-0">
+                    <img src="01.webp" class="img-left img-all" alt="01">
                 </div>
-                <div class="col-12 col-md-5 d-flex flex-wrap px-0 ms-1">
-                    <img src="02.webp" alt="02" class="imgs-right img-all img-fluid me-md-1 mb-md-1">
-                    <img src="03.webp" alt="03" class="imgs-right img-all img-fluid top-right-img mb-md-1">
-                    <img src="04.webp" alt="04" class="imgs-right img-all img-fluid me-md-1">
-                    <img src="05.webp" alt="05" class="imgs-right img-all img-fluid bottom-right-img">
+                <div class="col-12 pb-2 col-md-6 row pb-md-0">
+                    <div class="col-12 col-md-6 p-md-0 pe-md-1 pb-md-1">
+                        <img src="02.webp" class="imgs-right img-all" alt="02">
+                    </div>
+                    <div class="col-12 pb-2 col-md-6 p-md-0 ps-md-1 pb-md-1">
+                        <img src="03.webp" class="imgs-right top-right-img img-all" alt="03">
+                    </div>
+                    <div class="col-12 pb-2 col-md-6 p-md-0 pt-md-1 pe-md-1">
+                        <img src="04.webp" class="imgs-right img-all" alt="04">
+                    </div>
+                    <div class="col-12 pb-2 col-md-6 p-md-0 ps-md-1 pt-md-1">
+                        <img src="05.webp" class="imgs-right bottom-right-img img-all" alt="05">
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <!--* Info section -->
     <section>
@@ -101,8 +111,9 @@
     </section>
     <!-- Feedback Section -->
     <section>
+        <!-- rewiews title -->
         <div class="container-fluid pt-5">
-            <div class="row">
+            <div class="row ">
                 <div class="col-12 col-md-10 offset-md-1 border-top pt-5 px-0">
                     <h4 class="d-flex align-items-center m-0">
                         <i class="fa-solid fa-star"></i> 5.0
@@ -115,70 +126,86 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid py-5">
+        <!-- reviews objects -->
+        <div class="container-fluid mt-5 col-12 col-md-10 offset-md-1">
             <div class="row">
-                <div class="col-12 col-lg-10 offset-lg-1 d-flex justify-content-center px-lg-0 mb-sm-5">
-                    <div class="row justify-content-center">
-                        <div class="reviews-obj first col-6 col-sm-4 col-md-1">
-                            <p>Valutazione<br>Complessiva</p>
-                            <ol class="d-flex flex-column-reverse ps-0">
-                                <li>
-                                    <div class="reviews-li"></div>
-                                </li>
-                                <li>
-                                    <div class="reviews-li"></div>
-                                </li>
-                                <li>
-                                    <div class="reviews-li"></div>
-                                </li>
-                                <li>
-                                    <div class="reviews-li"></div>
-                                </li>
-                                <li>
-                                    <div class="reviews-li black"></div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="reviews-obj first col-6 col-sm-4 col-md-1">
-                            <div class="reviews-content">
+                <div class="col-12 col-md-5 row px-0 ms-2 mb-5 mb-md-0">
+                    <div class="col-4 reviews-obj border-end">
+                        <p>Valutazione<br>Complessiva</p>
+                        <ol class="d-flex flex-column-reverse ps-0">
+                            <li>
+                                <div class="reviews-li"></div>
+                            </li>
+                            <li>
+                                <div class="reviews-li"></div>
+                            </li>
+                            <li>
+                                <div class="reviews-li"></div>
+                            </li>
+                            <li>
+                                <div class="reviews-li"></div>
+                            </li>
+                            <li>
+                                <div class="reviews-li black"></div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-4 reviews-obj border-end">
+                        <div class="reviews-content d-flex flex-column justify-content-between">
+                            <div>
                                 <h6 class="review-arg mb-0">Pulizia</h6>
                                 <h5 class="reviews-score">5.0</h5>
-                                <i class="fa-solid fa-broom"></i>
                             </div>
+                            <i class="fa-solid fa-broom"></i>
                         </div>
-                        <div class="reviews-obj first col-6 col-sm-4 col-md-1">
-                            <div class="reviews-content">
+                    </div>
+                    <div class="col-4 reviews-obj border-end">
+                        <div class="reviews-content d-flex flex-column justify-content-between">
+                            <div>
                                 <h6 class="review-arg mb-0">Precisione</h6>
                                 <h5 class="reviews-score">5.0</h5>
-                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 row px-0 ms-2">
+                    <div class="col-12 col-sm-6 row mb-5">
+                        <div class="col-6 reviews-obj border-end">
+                            <div class="reviews-content d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="review-arg mb-0">Check-in</h6>
+                                    <h5 class="reviews-score">5.0</h5>
+                                </div>
+                                <i class="fa-solid align-self-start fa-key"></i>
                             </div>
                         </div>
-                        <div class="reviews-obj second col-6 col-sm-3 col-md-1">
-                            <div class="reviews-content">
-                                <h6 class="review-arg mb-0">Check-in</h6>
-                                <h5 class="reviews-score">5.0</h5>
-                                <i class="fa-solid fa-key"></i>
-                            </div>
-                        </div>
-                        <div class="reviews-obj second col-6 col-sm-3 col-md-1">
-                            <div class="reviews-content">
-                                <h6 class="review-arg mb-0">Comunicazione</h6>
-                                <h5 class="reviews-score">5.0</h5>
+                        <div class="col-6 reviews-obj border-end">
+                            <div class="reviews-content d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="review-arg mb-0">Comunicazione</h6>
+                                    <h5 class="reviews-score">5.0</h5>
+                                </div>
                                 <i class="fa-regular fa-message"></i>
                             </div>
                         </div>
-                        <div class="reviews-obj second col-6 col-sm-3 col-md-1">
-                            <div class="reviews-content">
-                                <h6 class="review-arg mb-0">Posizione</h6>
-                                <h5 class="reviews-score">5.0</h5>
+                    </div>
+                    <div class="col-12 col-sm-6 row mb-5">
+                        <div class="col-6 reviews-obj border-end">
+                            <div class="reviews-content d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="review-arg mb-0">Posizione</h6>
+                                    <h5 class="reviews-score">5.0</h5>
+                                </div>
                                 <i class="fa-regular fa-map"></i>
                             </div>
                         </div>
-                        <div class="reviews-obj second col-6 col-sm-3 col-md-1">
-                            <div class="reviews-content">
-                                <h6 class="review-arg mb-0">Qualità/Prezzo</h6>
-                                <h5 class="reviews-score">4.2</h5>
+                        <div class="col-6 reviews-obj">
+                            <div class="reviews-content d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="review-arg mb-0">Qualità/Prezzo</h6>
+                                    <h5 class="reviews-score">4.2</h5>
+                                </div>
                                 <i class="fa-solid fa-tag"></i>
                             </div>
                         </div>
@@ -186,15 +213,15 @@
                 </div>
             </div>
         </div>
+        <!-- reviews comments -->
+        <div class="container-fluid mt-2">
+            <div class="row">
 
-        <div class="container-fluid mt-5 pt-5">
-            <div class="row mt-5 pt-5">
-
-                <div class="col-12 col-md-10 offset-md-1 px-0">
+                <div class="col-12 col-md-10 offset-md-1 border-top px-0">
 
                     <div class="row d-flex justify-content-between">
 
-                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-4">
+                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-5">
                             <div class="d-flex">
                                 <div class="img-rewiews01"></div>
                                 <div class="w-100 ms-2">
@@ -218,7 +245,7 @@
                             <a href="#" class="link-black">Mostra altro</a>
                         </div>
 
-                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-4">
+                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-5">
                             <div class="d-flex">
                                 <div class="img-rewiews02"></div>
                                 <div class="w-100 ms-2">
@@ -240,7 +267,7 @@
                                 fantastiche! Grazie soprattutto a Dem!</p>
                         </div>
 
-                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-4">
+                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-5">
                             <div class="d-flex">
                                 <div class="img-rewiews03"></div>
                                 <div class="w-100 ms-2">
@@ -263,7 +290,7 @@
                             <a href="#" class="link-black">Mostra altro</a>
                         </div>
 
-                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-4">
+                        <div class="col-12 ps-4 col-md-6 ps-0 pe-3 mt-5">
                             <div class="d-flex">
                                 <div class="img-rewiews04"></div>
                                 <div class="w-100 ms-2">

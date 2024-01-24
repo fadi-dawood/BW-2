@@ -1,11 +1,9 @@
 .img-left{
-    width: 100%;
+    width: 96%;
     border-radius: 15px 0px 0px 15px;
 }
 .imgs-right{
-    
-    width: 49%;
-    /* box-sizing: content-box; */
+    width: 100%;
 }
 
 .top-right-img{
@@ -63,10 +61,8 @@
 }
 
 .reviews-obj{
-    height: 100%;
-    width: 11.90vw;
+    height: 150px;
     font-size: 10pt;
-    border-right: 1px solid lightgray;
 }
 
 .reviews-obj > p{
@@ -107,9 +103,7 @@
 }
 
 .reviews-content{
-    position: relative;
     height: 100%;
-    padding-left: 8%;
 }
 
 .reviews-arg{
@@ -117,8 +111,6 @@
 }
 
 div.reviews-obj > div.reviews-content > i[class^="fa"]{
-    position: absolute;
-    bottom: 10px;
     font-size: 20pt;
 }
 
@@ -129,6 +121,18 @@ div.reviews-obj > div.reviews-content > i[class$="key"]{
 div.col-md-10.offset-md-1 > h4 > i.fa-solid.fa-star{
     font-size: 20px;
     padding: 5px;
+}
+
+@media screen and (max-width: 1032px){
+    h6.review-arg{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 885px){
+    h6.review-arg{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -143,7 +147,6 @@ div.col-md-10.offset-md-1 > h4 > i.fa-solid.fa-star{
     }
 
     .reviews-obj.first{
-        width: 32vw;
         margin-bottom: 30px;
     }
 
@@ -151,8 +154,14 @@ div.col-md-10.offset-md-1 > h4 > i.fa-solid.fa-star{
         border: none;
     }
 
-    .reviews-obj.second{
-        width: 24vw;
+    h6.review-arg{
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 661px){
+    h6.review-arg{
+        font-size: 12pt;
     }
 }
 
@@ -160,11 +169,5 @@ div.col-md-10.offset-md-1 > h4 > i.fa-solid.fa-star{
     .img-all{
         width: 100vw;
         margin: 10px 0px 0px 0px !important;
-    }
-}
-
-@media screen and (max-width: 1075px){
-    div.reviews-content > h6.review-arg{
-        font-size: 11px;
     }
 }
