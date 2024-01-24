@@ -47,3 +47,9 @@ a {
 .star-rating-num, .num-rating {
     font-size: 14px;
 }
+
+/** Footer  */
+
+footer{
+    background-color: #f7f7f7;
+}

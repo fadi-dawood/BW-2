@@ -170,3 +170,10 @@ nav>div:last-of-type>div:last-of-type {
     font-size: 10px;
     text-align: center;
 }
+
+
+/** Footer  */
+
+footer{
+    background-color: #f7f7f7;
+}
