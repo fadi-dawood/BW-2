@@ -13,6 +13,10 @@
     font-weight: 900;
 }
 
+.info, .filter-btn {
+    font-size: 14px;
+}
+
 .filter-btn {
     border-radius: 15px;
     background-color: #EBEBEB;
@@ -35,17 +39,11 @@ a {
     font-size: 14px;
 }
 
-@media (min-width: 992px){
-    .card {
-        width: 15% !important;    
-    }
-}
-
 .fa-star {
     color: #DA0B64;
     font-size: 12px !important;
 }
 
-.star-rating-num {
-    font-size: 15px;
+.star-rating-num, .num-rating {
+    font-size: 14px;
 }
