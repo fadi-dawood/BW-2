@@ -53,3 +53,13 @@ a {
 footer{
     background-color: #f7f7f7;
 }
+
+.footer-title {
+    color: rgb(54, 54, 54);
+}
+
+.footer-link {
+    font-weight: 100 !important;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
