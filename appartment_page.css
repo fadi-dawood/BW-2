@@ -139,9 +139,10 @@ nav>div:last-of-type>div:last-of-type {
     border-left: 0;
 }
 
-.prenotation-card>div.container-fluid div:nth-of-type(2) button {
+.prenotation-card>div.container-fluid>div:nth-of-type(2) button {
     border-radius: 0 0 0 5px;
     border: 0;
+    height: 35px;
     border-bottom: 1px #afafaf solid;
     border-left: 1px #afafaf solid;
     margin: 0;
@@ -151,8 +152,9 @@ nav>div:last-of-type>div:last-of-type {
     padding-left: 25px;
 }
 
-.prenotation-card>div.container-fluid div:nth-of-type(2) input {
+.prenotation-card>div.container-fluid>div:nth-of-type(2) input {
     border: 0;
+    border-radius: 0 0 5px 0;
     border-bottom: 1px #afafaf solid;
     border-right: 1px #afafaf solid;
     border-top: 0;
