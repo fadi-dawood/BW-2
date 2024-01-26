@@ -1,5 +1,66 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-container, .content {
+    width: 90% !important;
+}
+
+.search-title {
+    font-weight: 900;
+}
+
+.info, .filter-btn {
+    font-size: 14px;
+}
+
+.filter-btn {
+    border-radius: 15px;
+    background-color: #EBEBEB;
+}
+
+.filter-btn:hover {
+    box-shadow: 1px 1px 10px rgb(192, 192, 192);
+    background-color: #f5f5f5;
+}
+
+a {
+    color: black;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.house-info, .house-name {
+    font-size: 14px;
+}
+
+.fa-star {
+    color: #DA0B64;
+    font-size: 12px !important;
+}
+
+.star-rating-num, .num-rating {
+    font-size: 14px;
+}
+
+/** Footer  */
+
+footer{
+    background-color: #f7f7f7;
+}
+
+.footer-title {
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+}
+
+.footer-link {
+    font-weight: 100 !important;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
 }

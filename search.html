@@ -3,12 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="appartment_page.css">
     <link rel="stylesheet" href="search_style.css">
     <title>AirBnB mockup - Search page</title>
 </head>
 <body>
     
+    <nav class="container-fluid px-3 mb-2 border d-flex justify-content-center">
+        <div class="nav-container d-flex justify-content-between align-items-center">
+            <div>
+                <img class="logo navbar-brand" src="assets/logo-pink.png" alt="logo Airbnb" width="100px">
+            </div>
+            <div class="right-part d-flex justify-content-between align-items-center">
+                <span class="mx-2">Affitta con Airbnb</span>
+                <span class="mx-2"><i class="fas fa-globe"></i></span>
+                <div class="btn-group mx-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bars text-dark"></i>
+                        <i class="fas fa-user text-dark"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Registrati</button></li>
+                        <li><button class="dropdown-item" type="button">Accedi</button></li>
+                        <hr>
+                        <li><button class="dropdown-item" type="button">Gift Card</button></li>
+                        <li><button class="dropdown-item" type="button">Affitta con Airbnb</button></li>
+                        <li><button class="dropdown-item" type="button">Centro Assistenza</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content container-fluid mt-5">
+        <p id="stays-number mb-1">10 stays</p>
+        <h2 class="search-title">Stays in Italy</h2>
+        <div class="filter-btn-container">
+            <button class="filter-btn px-2 py-1 me-1 my-1 rounded-4 border border-1 border-dark">Available houses</button>
+            <button class="filter-btn px-2 py-1 me-1 my-1 rounded-4 border border-1 border-dark">Booked houses</button>
+            <button class="filter-btn px-2 py-1 me-1 my-1 rounded-4 border border-1 border-dark">All houses</button>
+        </div>
+        <p class="info mt-2">Enter dates and number of guests to see the total price per night.</p>
+        <p class="info">Review COVID-19 travel restrictions before you book. <a href="#" class="link-underline link-underline-opacity-0">Learn more</a></p>
+    
+        <div class="container-fluid mt-5">
+            <div class="row row-cols-xl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 d-flex justify-content-start">
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-872331783776671863/original/0de40905-1660-4fca-91fb-94099ae6e5ab.jpeg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">4.75</span>
+                                </span>
+                                <span class="num-rating"> · 4 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Apartment · Genova</p>
+                            <p class="house-name mb-0">The Windy House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-16472272/original/5ac2e5bc-6569-46b4-a2cf-f9f7350f73e6.jpeg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">4.00</span>
+                                </span>
+                                <span class="num-rating"> · 8 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">House · Braise</p>
+                            <p class="house-name mb-0">Lake House</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/89494640/e150036b_original.jpg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">2.50</span>
+                                </span>
+                                <span class="num-rating"> · 11 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Villa · Como</p>
+                            <p class="house-name mb-0">Villa Lanza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/5951967/450ac5d8_original.jpg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">4.25</span>
+                                </span>
+                                <span class="num-rating"> · 7 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Apartment · Vernazza</p>
+                            <p class="house-name mb-0">Il Campanile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/238fa217-9a64-4ea2-9430-1fae3d97877f.jpg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">2.75</span>
+                                </span>
+                                <span class="num-rating"> · 4 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Hotel · Bellagio</p>
+                            <p class="house-name mb-0">Villa Sissi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/b7c9264d-73c9-45c3-882e-6e9577d63d68.jpg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">4.00</span>
+                                </span>
+                                <span class="num-rating"> · 15 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">House · Trieste</p>
+                            <p class="house-name mb-0">Nave Spaziale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-5264493/original/10d2c21f-84c2-46c5-b20b-b51d1c2c971a.jpeg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">5.00</span>
+                                </span>
+                                <span class="num-rating"> · 3 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">House · Val d'Orcia</p>
+                            <p class="house-name mb-0">Il Mulino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-863641733524515325/original/c5d47e91-2fac-49c8-8be1-9db9d88562a3.jpeg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">3.75</span>
+                                </span>
+                                <span class="num-rating"> · 10 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Apartment · Locri</p>
+                            <p class="house-name mb-0">The Sail</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50474130/original/c00d60fb-26f5-4352-b6c3-4b81abaec528.jpeg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">2.75</span>
+                                </span>
+                                <span class="num-rating"> · 13 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">Apartment · Milan</p>
+                            <p class="house-name mb-0">Showcase</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 border-0">
+                        <div class="card-img">
+                            <img src="https://a0.muscache.com/im/pictures/2ce2f829-7965-479a-af98-c5a84824ce06.jpg?im_w=720" alt="Forest cabin" class="img-fluid rounded">
+                        </div>
+                        <div class="card-text">
+                            <div class="ratings d-flex align-items-center mt-1">
+                                <span class="star-rating d-flex align-items-center">
+                                    <i class="fa-solid fa-star me-2"></i> 
+                                    <span class="fw-bold me-1 star-rating-num">4.50</span>
+                                </span>
+                                <span class="num-rating"> · 22 ratings</span>
+                            </div>
+                            <p class="house-info mb-0">House · Moncalieri</p>
+                            <p class="house-name mb-0">La Botte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid d-flex justify-content-center">
+        <div class="px-lg-5 mx-lg-5 mx-5 w-75">
+            <div class="d-flex justify-content-start flex-wrap">
+                <div class="my-3 flex-column d-flex flex-grow-1">
+                    <h5 class="fw-bold footer-title">Assistenza</h5>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Centro Assistenza</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>AirCover</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Antidiscriminazione</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Supporto alla disabilità</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Opzioni di cancellazione</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Segnala problema nel
+                            quartiere</span></a>
+                </div>
+                <div class="my-3 flex-column d-flex flex-grow-1">
+                    <h5 class="fw-bold footer-title">Ospitare</h5>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Apri un Airbnb</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>AirCover per gli host</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Risorse per gli host</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Forum della community</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Ospitare responsabilmente</span></a>
+                </div>
+                <div class="my-3 flex-column d-flex flex-grow-1">
+                    <h5 class="fw-bold footer-title">Airbnb</h5>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Newsroom</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Nuove funzionalità</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Opportunità di lavoro</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Investitori</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Gift card</span></a>
+                    <a class="text-decoration-none txt-black my-1 footer-link" href=""><span>Soggiorni con Airbnb.org</span></a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                <div class="my-3 footer-link">
+                    <span class="text-decoration-none txt-black my-2">© 2024 Airbnb, Inc.</span>
+                    &#183;
+                    <a class="text-decoration-none txt-black my-2" href="">Privacy</a>
+                    &#183;
+                    <a class="text-decoration-none txt-black my-2" href="">Termini</a>
+                    &#183;
+                    <a class="text-decoration-none txt-black my-2" href="">Mappa del sito</a>
+                    &#183;
+                    <a class="text-decoration-none txt-black my-2" href="">Dettagli dell'azienda</a>
+                </div>
+                <div class="my-3 d-flex align-items-center">
+                    <span class="px-1"><i class="fas fa-globe"></i></span>
+                    <span class="px-1 me-3 fs-6">Italiano (IT)</span>
+                    <span class="px-1 me-2 fs-6">€ Euro</span>
+                    <span class="d-flex align-items-center"><i class="fab fa-facebook-square mx-2 fs-5"></i></span>
+                    <span class="d-flex align-items-center"><i class="fab fa-twitter-square mx-2 fs-5"></i></span>
+                    <span class="d-flex align-items-center"><i class="fab fa-instagram-square mx-2 fs-5"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/209b0f50b4.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
