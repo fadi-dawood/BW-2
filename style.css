@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+div#profileButton{
+    width: 55px;
+}
+div#jumboJumbo{
+    height: 600px;
+    overflow: hidden;
+    padding: 50px;
+}
+div#jumboJumbo img{
+    transform: translateY(-100px);
+}
+/* div#jumboJumbo div{
+    margin-top: 100px;
+} */
+div#navHome a{
+    color: white;
+}
+h2#jumboText{
+    width:250px;
+    font-size: 100px;
+}
+img.destIcon{
+    width: 50px;
+    height: 50px;
+}
